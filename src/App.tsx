@@ -1,21 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { memo, Suspense } from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import routes from "./router";
+import { Loading } from 'react-vant';
 import './App.css'
-import { Button } from 'react-vant'
 
-function App() {
-    const [count, setCount] = useState(0)
+export default memo(() => (
+    <Suspense fallback={
+        <Loading style={{ display: 'inline-flex' }} size="24px" vertical>
+            加载中...
+        </Loading>
 
-    return (
+    }>
         <div className="App">
-            <h1>Vite + React</h1>
-            <div className="card">
-                <Button type='primary' onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </Button>
-            </div>
+            <Router>
+                <Routes>
+                    {
+                        routes.map((item: any) => (
+                            <Route
+                                key={item.path}
+                                path={item.path}
+                                element={<item.component />}
+                            />
+                        ))
+                    }
+                </Routes>
+            </Router>
         </div>
-    )
-}
-
-export default App
+    </Suspense>
+))
