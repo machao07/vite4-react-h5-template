@@ -15,7 +15,9 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.1",
-    "react-vant": "^3.1.5"
+    "react-vant": "^3.1.5",
+    "fecha": "^4.2.3",
+    "currency-formatter-typescript": "^2.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

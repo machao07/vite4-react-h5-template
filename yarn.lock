@@ -662,6 +662,11 @@ csstype@^3.0.2:
   resolved "http://ebill.allinpalm.cn:4873/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
+currency-formatter-typescript@^2.2.1:
+  version "2.2.1"
+  resolved "http://ebill.allinpalm.cn:4873/currency-formatter-typescript/-/currency-formatter-typescript-2.2.1.tgz#e64f376c3b2808f5d38320f934df3d64faf3cb93"
+  integrity sha1-5k83bDsoCPXTgyD5NN89ZPrzy5M=
+
 dayjs@^1.11.6, dayjs@^1.9.1:
   version "1.11.7"
   resolved "http://ebill.allinpalm.cn:4873/dayjs/-/dayjs-1.11.7.tgz#4b296922642f70999544d1144a2c25730fce63e2"
@@ -743,6 +748,11 @@ escape-string-regexp@^1.0.5:
   version "1.0.5"
   resolved "http://ebill.allinpalm.cn:4873/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+
+fecha@^4.2.3:
+  version "4.2.3"
+  resolved "http://ebill.allinpalm.cn:4873/fecha/-/fecha-4.2.3.tgz#4d9ccdbc61e8629b259fdca67e65891448d569fd"
+  integrity sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==
 
 follow-redirects@^1.15.0:
   version "1.15.2"
