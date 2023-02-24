@@ -2,7 +2,7 @@ import { memo, Suspense } from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import routes from "./router";
 import { Loading } from 'react-vant';
-import './App.css'
+import './App.less'
 
 export default memo(() => (
     <Suspense fallback={
