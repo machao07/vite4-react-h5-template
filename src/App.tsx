@@ -1,15 +1,16 @@
 import { memo, Suspense } from 'react'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import routes from "./router";
-import { Loading } from 'react-vant';
+import { Divider, Loading } from 'react-vant';
 import './App.less'
 
 export default memo(() => (
     <Suspense fallback={
-        <Loading style={{ display: 'inline-flex' }} size="24px" vertical>
-            加载中...
-        </Loading>
-
+        <div className="wrapper">
+            <Loading style={{ display: 'inline-flex' }} size="24px" vertical>
+                加载中...
+            </Loading>
+        </div>
     }>
         <div className="App">
             <Router>
