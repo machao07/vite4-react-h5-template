@@ -3,7 +3,7 @@ import { lazy } from "react";
 const routes = [
     {
         path: '*',
-        component: lazy(() => import("../pages/NotFound")),
+        component: lazy(() => import("@/pages/NotFound")),
         meta: { title: 'not found' }
     },
 ]
